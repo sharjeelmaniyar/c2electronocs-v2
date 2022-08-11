@@ -215,10 +215,35 @@ body{
     float: left;
 }
 
+.analog-bg{
+    position: absolute;
+    /* border: solid 1px red; */
+    top: 335px;
+    width: 270px;
+    height: 230px;
+    background-color: var(--gradient-primary);
+}
+
 .home-Pic{
     display: flex;
     justify-content: center;
     margin: 100px 0;
+}
+
+.digital{
+    width: 90%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -150px;
+    margin-left: 130px;
+    background-color: var(--gradient-primary);
+}
+
+.digital-bg{
+    position: absolute;
+    height: 230px;
 }
 
 .digital-box h1{
