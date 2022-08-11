@@ -40,9 +40,21 @@
     /* font size  */
     --font-14 : 14px;
     --font-54: 54px;
+    --font-header:60px;
 
     /* line height  */
     --line-20 : 20px;
+
+    /* analog C23 / digital C24 */
+    --head-clr: #27DEBF ; 
+    --para-clr:#FFFFFF ;
+    --btn-clr: #71FCE5;
+
+
+    /* footer */
+    --footer-height:50px;
+    --footer-color: 45deg, #27DEBE, #055E4E;
+           
 }
 
 /* global components  */
@@ -129,19 +141,19 @@
 }
 
 .analog-box{
-    margin: 350px 80px;
+    margin: 405px 80px;
     width: 360px;
 }
 
 .analog-box h1{
     font-family: var(--font-poppins-bold);
-    font-size: 40px;
-    color: #27DEBF;
+    font-size: var(--font-54);
+    color: var(--head-clr);
 }
 
 .analog-box p{ 
-    font-family: var(--font-poppins-medium);
-    color: #FFFFFF;    
+    font-family: var(--font-poppins-regular);
+    color: var(--para-clr);    
 }
 
 .analog-buttons{
@@ -153,17 +165,9 @@
     width: 175px;
     border: none;
     border-radius: 5px;
-    background-color: #71FCE5;
+    background-color: var(--btn-clr);
     font-weight:bold ;
 }
-
-.book-btn{
-    height: 40px;
-    width: 175px;
-    border: none;
-    border-radius: 5px;
-}
-
 
 .digital-hero{
     /* background-color: rgb(105, 104, 104); */
@@ -174,44 +178,48 @@
 .digital-box{
     width: 360px;
     margin-top: 175px;
-    margin-left: 230px;
+    margin-left: 300px;
 }
 
 
 .digital-box h1{
     font-family: var(--font-poppins-bold);
     text-align: right;
-    font-size: 40px;
-    color: #27DEBF;
+    font-size: var(--font-54);
+    color: var(--head-clr);
 }
 
 .digital-box p{
     font-family: var(--font-poppins-medium);
     text-align: right;
-    color: #FFFFFF;    
+    color: var(--para-clr);    
 }
 
 .digital-buttons{
     text-align: center;
     margin: 14px 0;
     text-align: right;
-    color: #71FCE5;
+    color: var();
 }
 
-.footer{
+.footer-container{
     width: 100%;
-    background-color: #284742;
-    height: 60px;
-    position: absolute;
+    background: linear-gradient(var(--footer-color));
+    height: var(--footer-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
-.footer p{
+.footer-div{
+    background: none; 
+}
+
+.footer-div p{
     color: #FFFFFF;
-    font-family: var(--font-poppins-regular);
-    margin-top: 20px;
-    background-color: #284547;
+    font-family: var(--font-poppins-regular); 
+    background: none;    
 }
-
 
 
 @media (max-width:669px) {
