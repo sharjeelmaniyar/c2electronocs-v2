@@ -34,6 +34,8 @@
     --color-primary-04: rgb(39, 222, 191, 4%);
     --color-white-80: rgb(255,255,255, 80%);
     --color-black: #000000;
+    --PanelBg: rgb(4,106,45);
+    --PanelGradient: linear-gradient(0deg, rgba(4,106,45,1) 18%, rgba(84,167,115,1) 56%);
 
 
     /* fonts  */
@@ -113,6 +115,56 @@ body{
     color: var(--color-white-80); 
 }
 
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+  
+.dropbtn{
+	border: none;
+	outline: none;
+	color: var(--color-white-80);
+	padding: 0px 12px;
+	background-color: inherit;
+	font-size: var(--font-16);
+	font-family: var(--font-poppins-regular);
+	margin: 0;
+}
+  
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: var(--primary-color);
+} */
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	/* background-color: #f9f9f9; */
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+.dropdown-content a {
+	float: none;
+	color: var(--color-white-80);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+    color: var(--color-white-80);
+    font-family: var(--font-poppins-medium);  
+}
+
+  
+.dropdown-content a:hover {
+	background-color: #0c1519;
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+	background: var(--PanelGradient);
+}
+
 .bg-right{
     background-image: url(../Images/BG/effect-bg.svg) !important;
     background-position: 140% -320px !important;
@@ -145,13 +197,13 @@ body{
 .analog-bg{
     position: absolute;
     /* border: solid 1px red; */
-    top: 335px;
+    top: 378px;
     width: 270px;
     height: 230px;
     background-color: var(--gradient-primary);
 }
 
-.analog-box{
+.digital-box{
     display: block;
     position: absolute;
     bottom: 25%;
@@ -159,13 +211,13 @@ body{
 
 }
 
-.analog-box h1{
+.digital-box h1{
     font-family: var(--font-poppins-bold);
     font-size: var(--font-54);
     color: var(--primary-color);
 }
 
-.analog-box p{ 
+.digital-box p{ 
     font-family: var(--font-poppins-regular);
     color: var(--color-white-80); 
     width: 360px;   
@@ -213,12 +265,8 @@ body{
 }
 
 .card{
-    background-color: #FFFFFF;
-    border-radius: 8px;
-}
 
-.card img{
-    width: 100%;
+    border-radius: 8px;
 }
 
 #last-card{
